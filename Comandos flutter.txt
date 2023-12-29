@@ -1,0 +1,14 @@
+flutter package get //Recarga el archivo pubspec.yaml
+
+
+------------------ Gladle --------------
+ ./gradlew wrapper --gradle-version 7.4
+ ./gradlew -v
+
+------------SHA1----------------
+
+C:\Users\USUARIO\.android
+
+keytool -list -v -keystore C:\Users\USUARIO\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+X

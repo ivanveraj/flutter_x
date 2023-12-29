@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "605175902114",
+    "project_id": "naturelove-ca60e",
+    "storage_bucket": "naturelove-ca60e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605175902114:android:ba10de2c781f8faea2ccfb",
+        "android_client_info": {
+          "package_name": "com.example.naturelove"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605175902114-u30cdm2mc8nu7fte56q5pub7v92jovkn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.naturelove",
+            "certificate_hash": "91bb5b7c1b657a1259e4d6765f2c9493da2acfe8"
+          }
+        },
+        {
+          "client_id": "605175902114-6cnaalfof5vgjlk4s3mch02lg6ekh9mm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDK0eAZ1Myj1PvCkcas8Y4hSBBinZLADTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605175902114-6cnaalfof5vgjlk4s3mch02lg6ekh9mm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

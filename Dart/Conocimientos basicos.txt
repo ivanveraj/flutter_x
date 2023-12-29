@@ -1,0 +1,158 @@
+void main() {
+  String name="Ivan";
+  print("Hola mundo $name");
+  
+  String marca="Toyota";
+  String modelo="Corolla";
+  int anio=2022;
+  double price=50000;
+  //Variable dinamica
+  
+  var nombre="Milena";
+  print(nombre.toUpperCase());
+  
+  print('La marca del auto es: $marca');
+  print('El modelo del auto es: $modelo');
+  print(marca.length);
+  print('Primera letra:');
+  print(marca[0]);
+  print('Ultima letra:');
+  print(marca[marca.length-1]);
+  
+}
+
+void main() {
+	//Lista dinamica
+  List V=[1,2,3,4,5,'Hola'];
+  print(V);
+  V.add("ivan");
+  print(V); 
+  List <int>V2=[1,2,3,4,5];
+  print(V2);
+  V2.add(66);
+  print(V2);
+List N=List(10);
+//Lista con tamaño fijo
+print(N);
+  
+}
+
+void main() {
+  Map vehicle={
+    'name':'BMW ax',
+    'marca':'BMW'
+  };
+  
+  print(vehicle['name']);
+  vehicle.addAll({'pais':'alemania'});
+  print(vehicle);
+  
+  Map <int,String> selection={
+    1:'BMW',
+    2:'Supra',
+    3:'Hiunday'
+  };
+  print(selection);
+  
+  getName();
+
+  String name=getName2();
+  print(name);
+  
+  //Error
+  //String retorno=estados(name:"Jaider Vera",state:true);
+  //print(retorno);
+}
+void getName(){
+  print('Mi nombre es Ivan');
+}
+getName2(){
+  return('Mi nombre es Ivan 2');
+}
+
+/*String estados({String name, bool state}){
+  return("Estado: $name");
+}*/
+
+
+void main(){
+  final object=Vehicle();
+  object.setAnio=2022;
+  
+  print(object.getAnio);
+}
+
+class Vehicle{
+  int? _anio;
+  set setAnio(nuevo){
+    this._anio=nuevo;
+  }
+  get getAnio{
+    return this._anio;
+  }
+}
+
+
+void main(){
+  final object=Moto();
+  object.lectura();
+}
+
+abstract class Vehicle{
+  String? marca;
+  int? _anio;
+  void lectura();
+}
+
+class Moto implements Vehicle{
+  int? rueda=2;
+  String? marca="Ducati";
+  int? _anio=2021;
+  
+  lectura()=>print('Lectura $_anio');
+}
+
+//Se puede extends de una clase abstracta 
+
+
+void main(){
+  String msj=saludar(nombre:'Juan', texto:'Hola,');
+  print(msj);
+  
+}
+
+String saludar({String? texto, String? nombre}){
+  return '$texto $nombre';
+}
+
+//mixies
+abstract class Animal{
+  
+}
+
+abstract class Mamifero extends Animal{}
+abstract class Ave extends Animal{}
+abstract class Pez extends Animal{}
+
+abstract class Volador{
+  void volar()=>print('Estoy volando');
+}
+abstract class Caminante{
+  void caminar()=>print('Estoy caminando');
+}
+abstract class Nadador{
+  void nadar()=>print('Estoy nadando');
+}
+
+
+class Delfin extends Mamifero with Nadador{}
+class Mulcielago extends Mamifero with Caminante,Volador{}
+class Gato extends Mamifero with Caminante{}
+
+void main(){
+  final pato=new Delfin();
+  pato.nadar();
+  
+  final bat=Mulcielago();
+  bat.volar();
+}
